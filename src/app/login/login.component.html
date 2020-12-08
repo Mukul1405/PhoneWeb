@@ -1,0 +1,86 @@
+<!-- <html>
+<body>
+<div class="container">
+
+    <h1><b>LOGIN</b></h1>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid"> 
+          <div class="navbar-header">
+            <a class="navbar-brand" [routerLink]="['/']">Instagram</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a [routerLink]="['/']">Login</a></li>
+            <li><a [routerLink]="['/signIn']">SignUp</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      
+    <span><b>Email</b></span>
+    <input type="email" [(ngModel)]="em" placeholder="add email" class="form-control"><br>
+
+    <span><b>Password</b></span>
+    <input type="text" [(ngModel)]="pa" placeholder="add email" class="form-control"><br>
+
+    <button class="btn btn-primary" (click)="onClick()">Login</button>
+
+
+</div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<div class="container-signup">
+  <div class="signup-more"></div>
+  <div class="wrap-signup">
+    <div class="signup-form">
+      <span class="signup-form-title">
+        Sign In
+      </span>
+
+      <div class="wrap-input">
+        <span class="label-input">Email</span>
+        <input type="email" [(ngModel)]="em" placeholder="add email" class="input">
+        <span class="focus-input"></span>
+      </div>
+
+     
+
+      <div class="wrap-input">
+        <span class="label-input">Password</span>
+        <input type="text" [(ngModel)]="pa" placeholder="add password" class="input">
+        <span class="focus-input"></span>
+      </div>
+
+     
+
+    
+    <h3>New member <u><a [routerLink]="['/signIn']">Sign Up</a></u></h3> 
+    <br>
+    <br> 
+<div class="container-signup-form-btn">
+  <div class="wrap-signup-form-btn">
+    <button class="signup-form-btn" (click)="onClick()">Sign In</button>
+  </div>
+</div>
+
+<!-- <a class="login-button hov1" [routerLink]="['/']">
+  SignIn
+</a> -->
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<div class="nav">
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/']">Logout</a>
+    </div>
+<!-- <label >Name</label>
+
+<input type="text" maxlength="20" placeholder="Enter Name" [(ngModel)]="name">
+<br>
+<br>
+<label>Phone Number</label>
+
+<input type="text" pattern="/^(7\d|8\d|9\d)\d{9}$/" maxlength="10" placeholder="Enter Phone Number" [(ngModel)]="phone">
+
+<br>
+<br> -->
+<!-- 
+<label>Put your Email</label>
+
+<input type="email" placeholder="Enter your email" [(ngModel)]="email"> -->
+<!-- 
+<input type="submit" (click)="addContact()">
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<div class="container-signup">
+  <div class="signup-more"></div>
+  <div class="wrap-signup">
+    <div class="signup-form">
+      <span class="signup-form-title">
+        Sign In
+      </span>
+
+      <div class="wrap-input">
+        <span class="label-input">Name</span>
+        <input type="email" [(ngModel)]="name" placeholder="add Name" class="input">
+        <span class="focus-input"></span>
+      </div>
+
+     
+
+      <div class="wrap-input">
+        <span class="label-input">Phone Number</span>
+        <input type="text" [(ngModel)]="phone" placeholder="add Phone Number" class="input">
+        <span class="focus-input"></span>
+      </div>
+
+     
+<div class="container-signup-form-btn">
+  <div class="wrap-signup-form-btn">
+    <button class="signup-form-btn" (click)="addContact()">Add Contact</button>
+  </div>
+</div>
+
+<!-- <a class="login-button hov1" [routerLink]="['/']">
+  SignIn
+</a> -->
+    </div>
+  </div>
+</div>
+</body>
+</html>

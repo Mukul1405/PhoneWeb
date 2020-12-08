@@ -1,0 +1,19 @@
+
+<div class="nav">
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/']">Logout</a>
+    </div>
+<!-- <div *ngFor="let Contacts of Contacts">
+    <p>{{Contacts.name}}</p>
+    <p>{{Contacts.phone}}</p>
+    <br>
+    <br>
+</div> -->
+
+<div class="card" *ngFor="let Contacts of Contacts,let i of index">
+    <img class="imgsrc" src="displaycontact.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{Contacts.name}}</b></h4> 
+      <p>{{Contacts.phone}}</p> 
+    </div>
+  </div>

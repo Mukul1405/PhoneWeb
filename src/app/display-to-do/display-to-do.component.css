@@ -1,0 +1,32 @@
+
+.nav{
+    padding: 10px;
+    border: solid black 1px;
+    background-color: black;
+}
+.nav a{
+    padding:10px;
+    margin:10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  #btn1{
+     margin-left: 80em;
+  }
+  body{
+      margin-top: -22px;
+      margin-left: 75px;
+    background-image: url(C:\Users\HP\Desktop\todo\src\bg2.jpg);
+    background-repeat: no-repeat;    
+  }

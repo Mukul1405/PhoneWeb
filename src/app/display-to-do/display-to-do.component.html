@@ -1,0 +1,49 @@
+<div class="nav">
+     <a [routerLink]="['/home']">Home</a>
+     <a [routerLink]="['/']">Logout</a>
+     </div>
+
+<!-- <ul>
+    <li *ngFor="let lists of Todo;let i=index">
+      
+ <div class="panel panel-primary">
+   <div class="panel-heading">
+        <b>{{ lists.head }}</b><br>
+   </div>
+   <div class="panel-body">
+        <b>{{ lists.desc }}</b>
+        <button class="btn btn-danger" id="btn1" (click)="delete(i,lists.head)">delete</button>
+        </div>
+   </div>    
+       <br><br>
+    </li>
+</ul> 
+
+ -->
+
+<body>
+     <h1><strong style="margin-left:600px;color: aliceblue;">TO-DO LIST</strong></h1>
+     <div class="container">
+      
+       
+        
+        <ul>
+            <li *ngFor="let lists of Todo;let i=index">
+              
+         <div class="panel panel-primary">
+           <div class="panel-heading">
+                <b>{{ lists.head }}</b><br>
+           </div>
+           <div class="panel-body">
+                <b>{{ lists.desc }}</b>
+                <button class="btn btn-danger" id="btn1"(click)="delete(i,lists.head)">delete</button>
+                </div>
+           </div>    
+               <br><br>
+            </li>
+        </ul> 
+     </div>
+     </body>
+     
+
+

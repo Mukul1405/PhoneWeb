@@ -1,0 +1,81 @@
+<!-- <input type="text" placeholder="Heading" maxlength="20" style="width: 100%;" [(ngModel)]="he">
+<br>
+<br>
+<textarea  cols="208" rows="8" placeholder="Add your todo" [(ngModel)]="desc"></textarea>
+<br>
+<input type="submit" (click)="todo()"> -->
+<div class="nav">
+  <a [routerLink]="['/home']">Home</a>
+  <a [routerLink]="['/']">Logout</a>
+  </div>
+<!-- <body>
+    <h1><strong style="margin-left:600px;color: aliceblue;">TO-DO LIST</strong></h1>
+    <div class="container">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Add a ToDo" [(ngModel)]="he" name="items" >
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Abstract" [(ngModel)]="des" name="itemDetails"></textarea>
+        </mat-form-field>
+      </form>
+      <br>
+        <button type="submit" class="btn btn-primary" (click)="todo()">Add Item</button> 
+        <hr>
+       
+       
+    </div>
+    </body>
+     -->
+
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<div class="container-signup">
+  <div class="signup-more"></div>
+  <div class="wrap-signup">
+    <div class="signup-form">
+      <span class="signup-form-title">
+       Add an Item
+      </span>
+
+      <div class="wrap-input">
+        <span class="label-input">Heading</span>
+        <input type="email" [(ngModel)]="he" placeholder="add heading" class="input">
+        <span class="focus-input"></span>
+      </div>
+
+     
+
+      <div class="wrap-input">
+        <span class="label-input">Description</span>
+        <input type="text" [(ngModel)]="des" placeholder="add description" class="input">
+        <span class="focus-input"></span>
+      </div>
+
+     
+
+ 
+<div class="container-signup-form-btn">
+  <div class="wrap-signup-form-btn">
+    <button class="signup-form-btn" (click)="todo()">Add Todo</button>
+  </div>
+</div>
+
+<!-- <a class="login-button hov1" [routerLink]="['/']">
+  SignIn
+</a> -->
+    </div>
+  </div>
+</div>
+</body>
+</html>
